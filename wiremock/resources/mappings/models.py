@@ -127,9 +127,9 @@ class MappingRequest(BaseAbstractEntity):
     method = JsonProperty("method")
     url = JsonProperty("url")
     url_path = JsonProperty("urlPath")
-    url_path_template= JsonProperty("urlPathTemplate")
     url_path_pattern = JsonProperty("urlPathPattern")
     url_pattern = JsonProperty("urlPattern")
+    url_path_template= JsonProperty("urlPathTemplate")
     basic_auth_credentials = JsonProperty(
         "basicAuthCredentials", klass=BasicAuthCredentials
     )
